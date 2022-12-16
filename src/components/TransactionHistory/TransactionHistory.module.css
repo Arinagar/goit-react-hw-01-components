@@ -1,0 +1,24 @@
+table {
+  width: 750px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-of-type(even) {
+  background: #eee;
+}
+
+th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
