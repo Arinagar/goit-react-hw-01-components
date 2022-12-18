@@ -30,7 +30,7 @@ export const StatisticBox = styled.li`
   padding-bottom: ${({ theme }) => theme.spacing(5)};
   padding-left: ${({ theme }) => theme.spacing(10)};
 
-  background-color: randomColor;
+  background-color: ${({ theme }) => theme.colors.random()};
 `;
 
 export const StatisticText = styled.p`
@@ -38,10 +38,11 @@ export const StatisticText = styled.p`
   color: ${({ theme }) => theme.colors.grey};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
+  color: ${({ theme }) => theme.colors.random()};
 `;
 
 export const StatisticCounter = styled.span`
   font-size: ${({ theme }) => theme.spacing(8)};
   font-weight: 900;
-  color: ${({ theme }) => theme.colors.accent};
+  color: ${({ theme }) => theme.colors.random()};
 `;

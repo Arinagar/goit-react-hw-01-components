@@ -7,7 +7,7 @@ export const theme = Object.freeze({
     dark: '#212121',
     mainBackground: ['linear-gradient(to bottom, #c9d6ff,  #e2e2e2)'],
     tagBackground: ['linear-gradient(to bottom, #FFD194, #D1913C)'],
-    random: 'black',
+    random: () => `#${Math.floor(Math.random() * 16777215).toString(16)}`,
   },
   fontSizes: {
     small: '14px',

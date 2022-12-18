@@ -10,7 +10,7 @@ import {
 export const Statistics = ({ title, statsData }) => {
   return (
     <section className="statistics">
-      <StatisticTitle>{title}</StatisticTitle>
+      {{ title } && <StatisticTitle>{title}</StatisticTitle>}
 
       <StatisticsList>
         {statsData.map(({ id, label, percentage }) => {
